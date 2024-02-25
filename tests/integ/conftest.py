@@ -7,13 +7,13 @@ import uuid
 from typing import Dict
 
 import pytest
-import snowflake.connector
 from cryptography.hazmat.backends import default_backend
 from cryptography.hazmat.primitives import serialization
+
+import snowflake.connector
 from snowflake.snowpark import Session
 from snowflake.snowpark.exceptions import SnowparkSQLException
 from snowflake.snowpark.mock._connection import MockServerConnection
-
 from tests.parameters import CONNECTION_PARAMETERS
 from tests.utils import Utils
 
